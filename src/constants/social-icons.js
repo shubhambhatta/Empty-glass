@@ -1,5 +1,5 @@
 import React from "react"
-import { FaLinkedinIn, FaGithub } from "react-icons/fa"
+import { FaLinkedinIn, FaGithub, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa"
 
 export default [
   {

@@ -1,4 +1,5 @@
 import React from "react"
+import { FaEnvelope, FaEnvelopeOpen, FaMapMarkerAlt, FaPhoneAlt } from "react-icons/fa"
 import styled from "styled-components"
 import socialIcons from "../../constants/social-icons"
 
@@ -6,28 +7,30 @@ const Footer = () => {
   return (
     <FooterWrapper>
       <div className="credit">
-        Designed & developed by{" "}
-        <a
-          href="http://www.morganbaker.dev"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Morgan
-        </a>
+        <a href="mailto:info@emptyglass.com"><span><FaEnvelopeOpen color="#fff" /></span> info@emptyglass.com </a>
+        <a href=": "><span><FaMapMarkerAlt color="#fff" /></span> 2194, NSW, Australia</a>
+        <a href="tel: +977 123456789"><span><FaPhoneAlt color="#fff" /></span> +977 123456789</a>
       </div>
-      {socialIcons.map((item, index) => {
-        return (
-          <a
-            key={index}
-            href={item.url}
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <span className="sr-only">{item.name}</span>
-            {item.icon}
-          </a>
-        )
-      })}
+      <div className="credit">
+        <p>
+          © 2020 Empty Glass
+        </p>
+      </div>
+      <div className="social">
+        {/* {socialIcons.map((item, index) => {
+          return (
+            <a
+              key={index}
+              href={item.url}
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="sr-only">{item.name}</span>
+              {item.icon}
+            </a>
+          )
+        })} */}
+      </div>
     </FooterWrapper>
   )
 }
@@ -35,22 +38,39 @@ const Footer = () => {
 const FooterWrapper = styled.footer`
   background-color: #000;
   padding: 20px 30px;
-  text-align: center;
+  text-align: left;
+  display: flex;
+  justify-content:space-between;
+  align-items:center;
 
   .credit {
+    display:flex;
+    flex-direction: column;
+    gap:0.35rem;
     font-size: 0.85rem;
     margin-bottom: 0.5rem;
+    margin-left: 3rem;
 
+    svg{
+      margin-right:0.3rem;
+    }
+    p{
+      font-size: 1rem;
+      padding:4px;
+      margin:0
+    }
+    span{
+      padding: 0.25rem;
+    }
     a {
       padding: 0;
       font-size: 0.85rem;
       text-decoration: none;
-      background: -webkit-linear-gradient(45deg, #f441a5, #03a9f4);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
     }
   }
-
+  .social{
+    margin-right:3rem;
+  }
   a {
     color: #fff;
     font-size: 1.75rem;

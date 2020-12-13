@@ -8,13 +8,13 @@ const path = require(`path`)
 
 module.exports = {
   siteMetadata: {
-    title: "Startup",
-    titleTemplate: "%s | Helping startups get started",
-    description: "A simple one-page site for new businesses that uses GatsbyJS",
-    author: "Morgan Baker",
+    title: "Home",
+    titleTemplate: "%s | Empty Glass",
+    description: "A simple one-stop solution for new businesses that needs enterprise level softwares and designs",
+    author: "Shubham Bhatta",
     image: "/yellow-metal-design-decoration.jpg",
     siteUrl: "https://www.morganbaker.dev",
-    twitterUsername: "@twitter",
+    twitterUsername: "@shubhambhatta1",
   },
   plugins: [
     {
