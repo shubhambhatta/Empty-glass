@@ -9,7 +9,7 @@ const Footer = () => {
       <div className="credit">
         <a href="mailto:info@emptyglass.com"><span><FaEnvelopeOpen color="#fff" /></span> info@emptyglass.com </a>
         <a href=": "><span><FaMapMarkerAlt color="#fff" /></span> 2194, NSW, Australia</a>
-        <a href="tel: +977 123456789"><span><FaPhoneAlt color="#fff" /></span> +977 123456789</a>
+        <a href="tel: +61 0451070133"><span><FaPhoneAlt color="#fff" /></span> +61 0451070133 </a>
       </div>
       <div className="credit">
         <p>
