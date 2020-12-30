@@ -5,6 +5,8 @@ import BackgroundImage from "gatsby-background-image"
 import Button from "../Button/button"
 import { Link } from "react-scroll"
 import { motion } from "framer-motion"
+import { Carousel } from "react-bootstrap"
+import ServicesSlide from "../ServicesSlide"
 
 const Banner = () => {
   const data = useStaticQuery(graphql`
@@ -31,6 +33,8 @@ const Banner = () => {
         className="hero-image"
         fluid={data.file.childImageSharp.fluid}
       >
+
+        <ServicesSlide />
         <div className="hero-content">
           <motion.h1
             initial="hidden"
@@ -55,7 +59,7 @@ const Banner = () => {
               cta="Learn More"
               label="Banner Learn More"
               anchor={true}
-              href="linking"
+              href="services"
             />
           </Link>
         </div>
@@ -72,7 +76,7 @@ const BannerWrapper = styled.section`
 
     .hero-content {
       text-align: center;
-      height: 100%;
+      height: 50%;
       width: 100%;
       max-width: 400px;
       padding: 0 20px;

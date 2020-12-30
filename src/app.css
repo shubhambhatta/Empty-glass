@@ -4,7 +4,8 @@
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-    margin-bottom: 7.5rem;
+        padding-top: 7rem;
+    /* margin-bottom: 7.5rem; */
 }
 .row{
     display: -ms-flexbox;
@@ -17,11 +18,14 @@
     align-items: center;
     
 }
+.col{
+    margin: auto 0;
+}
 .col, .col img{
     width: 100%;
     padding: 0px 15px;
     box-sizing: border-box;
-    max-height: 420px;
+    height: 420px;
     object-fit: contain;
 }
 .col p{
